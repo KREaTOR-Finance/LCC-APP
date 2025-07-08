@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/LCC-APP">
       <Routes>
         <Route path="/" element={<AppLayout />}>
           <Route index element={<HomePage />} />
