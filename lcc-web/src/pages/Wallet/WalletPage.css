@@ -1,0 +1,355 @@
+.wallet-page {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.tab-navigation {
+  display: flex;
+  background: rgba(31, 64, 104, 0.3);
+  border-radius: 12px;
+  padding: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+.tab-btn {
+  flex: 1;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.7);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+}
+
+.tab-btn.active {
+  background: rgba(100, 255, 218, 0.2);
+  color: #64ffda;
+}
+
+.tab-btn:hover:not(.active) {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.balance-overview {
+  margin-bottom: 1rem;
+}
+
+.main-balance {
+  background: linear-gradient(135deg, rgba(100, 255, 218, 0.1), rgba(0, 212, 170, 0.1));
+  border: 1px solid rgba(100, 255, 218, 0.2);
+  border-radius: 20px;
+  padding: 2rem 1.5rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.balance-label {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+.balance-amount {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #64ffda;
+  margin-bottom: 0.5rem;
+}
+
+.balance-usd {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+.balance-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.75rem;
+}
+
+.balance-card {
+  background: rgba(31, 64, 104, 0.3);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 16px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  backdrop-filter: blur(10px);
+}
+
+.card-icon {
+  font-size: 1.5rem;
+  background: rgba(100, 255, 218, 0.1);
+  padding: 0.5rem;
+  border-radius: 12px;
+  min-width: 40px;
+  text-align: center;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.card-value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.card-label {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 500;
+}
+
+.wallet-actions {
+  margin-bottom: 1rem;
+}
+
+.actions-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+}
+
+.action-btn {
+  background: rgba(31, 64, 104, 0.3);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 16px;
+  padding: 1.25rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: inherit;
+  font: inherit;
+  backdrop-filter: blur(10px);
+}
+
+.action-btn:hover {
+  background: rgba(31, 64, 104, 0.5);
+  border-color: rgba(100, 255, 218, 0.3);
+  transform: translateY(-2px);
+}
+
+.action-btn.primary {
+  background: linear-gradient(135deg, #64ffda, #00d4aa);
+  color: #0A192F;
+  border-color: transparent;
+}
+
+.action-btn.primary:hover {
+  background: linear-gradient(135deg, #00d4aa, #64ffda);
+}
+
+.action-icon {
+  font-size: 1.5rem;
+}
+
+.transactions {
+  margin-bottom: 1rem;
+}
+
+.transactions-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.transaction-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.25rem;
+  background: rgba(31, 64, 104, 0.2);
+  border-radius: 16px;
+  border: 1px solid rgba(100, 255, 218, 0.05);
+}
+
+.tx-icon {
+  font-size: 1.5rem;
+  background: rgba(100, 255, 218, 0.1);
+  padding: 0.5rem;
+  border-radius: 12px;
+  min-width: 48px;
+  text-align: center;
+}
+
+.tx-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tx-description {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.tx-time {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.tx-amount {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.tx-amount.positive {
+  color: #64ffda;
+}
+
+.tx-amount.negative {
+  color: #ff6b6b;
+}
+
+.staking {
+  margin-bottom: 1rem;
+}
+
+.staking-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.staking-card {
+  background: rgba(31, 64, 104, 0.3);
+  border: 1px solid rgba(100, 255, 218, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  backdrop-filter: blur(10px);
+}
+
+.staking-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.staking-name {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.staking-apy {
+  background: rgba(100, 255, 218, 0.2);
+  color: #64ffda;
+  padding: 0.25rem 0.75rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+
+.staking-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.staking-info {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.staking-current {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.staking-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.stake-btn,
+.unstake-btn {
+  flex: 1;
+  padding: 0.75rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.stake-btn {
+  background: rgba(100, 255, 218, 0.1);
+  color: #64ffda;
+  border: 1px solid rgba(100, 255, 218, 0.3);
+}
+
+.stake-btn:hover {
+  background: rgba(100, 255, 218, 0.2);
+  border-color: rgba(100, 255, 218, 0.5);
+}
+
+.unstake-btn {
+  background: rgba(255, 107, 107, 0.1);
+  color: #ff6b6b;
+  border: 1px solid rgba(255, 107, 107, 0.3);
+}
+
+.unstake-btn:hover {
+  background: rgba(255, 107, 107, 0.2);
+  border-color: rgba(255, 107, 107, 0.5);
+}
+
+@media (max-width: 480px) {
+  .wallet-page {
+    padding: 0.75rem;
+    gap: 1rem;
+  }
+  
+  .main-balance {
+    padding: 1.5rem 1rem;
+  }
+  
+  .balance-amount {
+    font-size: 2rem;
+  }
+  
+  .balance-grid {
+    gap: 0.5rem;
+  }
+  
+  .balance-card {
+    padding: 0.75rem;
+  }
+  
+  .actions-grid {
+    gap: 0.5rem;
+  }
+  
+  .action-btn {
+    padding: 1rem 0.75rem;
+  }
+  
+  .transaction-item,
+  .staking-card {
+    padding: 1rem;
+  }
+} 
